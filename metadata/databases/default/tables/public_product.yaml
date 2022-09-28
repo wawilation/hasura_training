@@ -9,3 +9,14 @@ array_relationships:
         table:
           name: order_detail
           schema: public
+select_permissions:
+  - role: user
+    permission:
+      columns:
+        - created_at
+        - id
+        - name
+        - price
+        - updated_at
+      filter: {}
+      limit: 5
